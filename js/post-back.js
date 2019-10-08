@@ -1,0 +1,1 @@
+function shouldCloseGoBack(){if(!document.referrer)return!1;const e=new URL(document.referrer);return e.host==window.location.host&&"/"==e.pathname}shouldCloseGoBack()&&(document.querySelector("nav .close a").href="/#aktualnosci");
