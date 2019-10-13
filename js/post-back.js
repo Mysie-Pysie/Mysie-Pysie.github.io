@@ -1,1 +1,1 @@
-function shouldCloseGoBack(){if(!document.referrer)return!1;const e=new URL(document.referrer);return e.host==window.location.host&&"/"==e.pathname}shouldCloseGoBack()&&(document.querySelector("nav .close a").href="/#aktualnosci");
+"use strict";(()=>{(function(){if(!document.referrer)return!1;const e=new URL(document.referrer);if(e.host!=window.location.host)return!1;return"/"==e.pathname})()&&(document.querySelector("nav .close a").href="/#aktualnosci")})();
